@@ -72,4 +72,4 @@ be handled by the courts of Ljubljana, Slovenia.
 ## Contact
 
 Questions, complaints, or refund requests outside Google Play's standard
-window: rok.jenko@hycu.com.
+window: jenkocoban@gmail.com.

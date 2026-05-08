@@ -19,7 +19,7 @@ explains what the app collects, why, and what you can do about it.
 ## Who we are
 
 CycleMatix is built and operated by Rok Jenko, a single developer based in
-Slovenia, EU. Contact: rok.jenko@hycu.com.
+Slovenia, EU. Contact: jenkocoban@gmail.com.
 
 ## What CycleMatix collects
 
@@ -71,7 +71,7 @@ Under GDPR (EU) and CCPA (California):
   `.json` from the ride detail screen.
 - **No sale** — we don't sell your data. We have no business model that
   would benefit from selling data; CycleMatix is a one-time-purchase app.
-- **Contact** — rok.jenko@hycu.com for any data request.
+- **Contact** — jenkocoban@gmail.com for any data request.
 
 ## Children
 
