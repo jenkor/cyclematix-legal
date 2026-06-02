@@ -21,7 +21,7 @@ explains what the app collects, why, and what you can do about it.
 ## Who we are
 
 CycleMatix is built and operated by Rok Jenko, an independent developer
-based in Slovenia, EU. Contact: jenkocoban@gmail.com. This email is also
+based in Slovenia, EU. Contact: cyclematix@gmail.com. This email is also
 the single point of contact under Article 12 of Regulation (EU) 2022/2065
 (the Digital Services Act).
 
@@ -111,7 +111,7 @@ rely on:
   otherwise.
 
 You can ask for the relevant clauses or certification status by emailing
-jenkocoban@gmail.com.
+cyclematix@gmail.com.
 
 ## Permissions
 
@@ -194,7 +194,7 @@ any consent you've given.
   `.json` from the ride detail screen. Settings, FTP history, paired
   sensor IDs, and trial state are not currently exportable as a
   standalone bundle; an encrypted Drive backup contains all of it and
-  can be restored to a fresh install. Email jenkocoban@gmail.com if
+  can be restored to a fresh install. Email cyclematix@gmail.com if
   you need a different format.
 - **Withdraw consent** — disconnect Strava / Drive in Settings →
   Integrations.
@@ -204,7 +204,7 @@ any consent you've given.
   Information Commissioner (Informacijski pooblaščenec, Dunajska 22,
   1000 Ljubljana, gp.ip@ip-rs.si, https://www.ip-rs.si) or with the
   supervisory authority in your EU/EEA country of residence.
-- **Contact** — jenkocoban@gmail.com.
+- **Contact** — cyclematix@gmail.com.
 
 ## Accounts
 

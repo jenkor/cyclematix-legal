@@ -16,7 +16,7 @@ optional third-party services (Mapbox, Strava, Google Drive).
 ## Provider
 
 CycleMatix is operated by Rok Jenko, an independent developer based in
-Slovenia, EU. Contact: jenkocoban@gmail.com. This email is also the
+Slovenia, EU. Contact: cyclematix@gmail.com. This email is also the
 single point of contact for users and authorities under Article 12 of
 Regulation (EU) 2022/2065 (Digital Services Act). The price you pay
 includes any applicable VAT, which Google Play collects and remits on
@@ -47,7 +47,7 @@ If you bought CycleMatix as a consumer in the EU/EEA:
 
 - **14-day right of withdrawal** (Directive 2011/83/EU Art. 9; Slovenian
   ZVPot-1 Art. 134). You may withdraw from the purchase within 14 days,
-  without giving a reason, by emailing jenkocoban@gmail.com.
+  without giving a reason, by emailing cyclematix@gmail.com.
 
   Because CycleMatix is digital content delivered immediately, by
   completing the purchase **you expressly consent to immediate
@@ -125,4 +125,4 @@ if you are a consumer — the courts of your place of residence
 ## Contact
 
 Questions, complaints, refund requests, statutory withdrawal notices,
-or any other notice under these Terms: jenkocoban@gmail.com.
+or any other notice under these Terms: cyclematix@gmail.com.
