@@ -4,7 +4,7 @@ title: CycleMatix — Legal
 
 # CycleMatix
 
-Local-first cycling tracker for Android. Pay once, no subscription.
+Local-first cycling tracker for Android. Free, with a one-time in-app unlock — no subscription.
 
 - [Privacy Policy](privacy.html)
 - [Terms of Service](terms.html)
