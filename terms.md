@@ -1,26 +1,36 @@
 # CycleMatix Terms of Service
 
-_Last updated: 2026-05-08_
+_Last updated: 2026-06-02_
 
-By installing CycleMatix, you agree to these terms. They are intentionally
-short and written in plain language. Where statutory consumer-protection
-rules in your country give you stronger rights than these terms, those
-statutory rules apply.
+By installing or using CycleMatix, you agree to these terms. The app is
+free to install; an optional one-time in-app purchase unlocks the full
+feature set (see "The deal"). They are intentionally short and written in
+plain language. Where statutory consumer-protection rules in your country
+give you stronger rights than these terms, those statutory rules apply.
 
 ## What CycleMatix is
 
-CycleMatix is a paid Android app for recording and analysing cycling
-rides. It uses your phone's GPS, optional Bluetooth sensors, and
-optional third-party services (Mapbox, Strava, Google Drive).
+CycleMatix is a free Android app for recording and analysing cycling
+rides. The full feature set is unlocked by a single optional one-time
+in-app purchase (no subscription); a free trial and a permanently-free
+tier are described below. It uses your phone's GPS, optional Bluetooth
+sensors, and optional third-party services: map tiles (OpenFreeMap,
+MapTiler, or Mapbox), routing and turn-by-turn directions (the public
+OSRM demo server, or Mapbox if you supply a key), place search
+(OpenStreetMap Nominatim), terrain elevation correction (OpenTopoData),
+terrain / hillshade tiles (AWS Open Data / Mapzen), weekend weather
+(open-meteo), activity import (Strava), and encrypted backup (Google
+Drive). Several of these are free community services with no guaranteed
+availability — see "What we don't promise."
 
 ## Provider
 
 CycleMatix is operated by Rok Jenko, an independent developer based in
-Slovenia, EU. Contact: cyclematix@gmail.com. This email is also the
+Slovenia, EU. Contact: jenkocoban@gmail.com. This email is also the
 single point of contact for users and authorities under Article 12 of
-Regulation (EU) 2022/2065 (Digital Services Act). The price you pay
-includes any applicable VAT, which Google Play collects and remits on
-our behalf.
+Regulation (EU) 2022/2065 (Digital Services Act). The price shown for the
+in-app purchase includes any applicable VAT, which Google Play collects
+and remits on our behalf.
 
 ## The deal
 
@@ -29,33 +39,37 @@ our behalf.
   is **14 days**. If you have logged fewer than 3 rides by day 14, the
   trial automatically extends to **30 days** so you have time to put
   the app through its paces.
-- **One-time purchase** to keep using after the trial. No subscription,
-  no recurring billing. The price you pay at purchase is the price you
-  pay forever — we will not retroactively gate features behind a new
-  subscription.
+- **One-time in-app purchase** to keep the full feature set after the
+  trial. No subscription, no recurring billing. The one-time price you
+  pay to unlock is the price you pay forever — we will not retroactively
+  move unlocked features behind a new purchase or subscription.
+- **Free forever, even without buying.** Without the purchase you can
+  still view your past rides, export them, switch map providers, and
+  import a limited number of rides — see the in-app "What's free forever"
+  list on the paywall.
 - Refunds follow Google Play's standard 48-hour automatic-refund window.
   Outside that window, refund requests can be sent to the contact
   address below; we'll honour reasonable requests at our discretion,
   on top of any statutory rights described below.
-- Your purchase is tied to your Google Play account. If you change
-  devices, restore your purchase via the in-app "Restore previous
-  purchase" button on the paywall screen.
+- Your unlock is tied to your Google Play account. If you change
+  devices, restore it via the in-app **"Restore purchase"** button on
+  the paywall screen.
 
 ## EU consumer rights
 
-If you bought CycleMatix as a consumer in the EU/EEA:
+If you make the in-app purchase as a consumer in the EU/EEA:
 
 - **14-day right of withdrawal** (Directive 2011/83/EU Art. 9; Slovenian
-  ZVPot-1 Art. 134). You may withdraw from the purchase within 14 days,
-  without giving a reason, by emailing cyclematix@gmail.com.
+  ZVPot-1 Art. 134). You may withdraw from the in-app purchase within 14
+  days, without giving a reason, by emailing jenkocoban@gmail.com.
 
-  Because CycleMatix is digital content delivered immediately, by
-  completing the purchase **you expressly consent to immediate
+  Because the unlocked content is digital content supplied immediately,
+  by completing the in-app purchase **you expressly consent to immediate
   performance and acknowledge that you lose the 14-day right of
-  withdrawal once delivery begins** (Art. 16(m) of the Directive,
+  withdrawal once supply begins** (Art. 16(m) of the Directive,
   Slovenian ZVPot-1 Art. 136(1)(13)). If you don't want to waive
-  that right, request a refund via Google Play before opening the
-  unlocked app.
+  that right, request a refund via Google Play before using the
+  unlocked features.
 
 - **Conformity** (Directive 2019/770/EU Art. 8; Slovenian ZVPot-1).
   The app must match its description, be fit for normal use, and
@@ -80,14 +94,24 @@ in these Terms.
   (security and bug fixes) for at least the statutory period in your
   country (two years in Slovenia and most of the EU), and we aim for
   longer.
-- We won't add ads, won't sell your data, won't move features behind a
-  new subscription. The price you paid is the price you paid; what
-  you got is what you keep.
+- We won't add ads, won't sell your data, and won't move already-unlocked
+  features behind a new purchase or subscription. Your one-time unlock is
+  permanent and includes future updates.
 
 ## What we don't promise
 
-- 100 % uptime of third-party services. If Mapbox / Strava / Google
-  goes down, we can't fix that.
+- **Availability of third-party services.** Several features rely on
+  external services we do not operate — including free community services
+  with no guaranteed uptime, capacity, or rate limits: OpenStreetMap
+  routing (the public OSRM demo server), OpenStreetMap place search
+  (Nominatim), OpenTopoData elevation, AWS Open Data / Mapzen terrain
+  tiles, OpenFreeMap and MapTiler map tiles, plus Mapbox, Strava, and
+  Google Drive. These may be slow, rate-limited, temporarily unavailable,
+  or discontinued by their operators at any time. When that happens,
+  routing, search, elevation correction, map display, import, or backup
+  may not work, and we cannot fix or compensate for the outage. Core
+  local features (recording rides from GPS / sensors, viewing and
+  exporting your saved rides) do not depend on these services.
 - Compatibility with every Android device. We test on Pixel and Samsung;
   others may have edge cases (especially around BLE and background
   services on heavily-modified Android skins).
@@ -96,13 +120,19 @@ in these Terms.
 
 ## Liability
 
-CycleMatix is a tool. **It is not a navigation device, not a medical
-device, not a substitute for paying attention to the road.** Use at
-your own risk. We're not liable for missed turns, lost data, drained
-batteries, crashes, injuries, or any other consequence of using the app
-while cycling — to the extent the law allows. Mandatory consumer
-protections (statutory conformity remedies, liability for gross
-negligence or wilful misconduct) are not displaced by this clause.
+CycleMatix is a tool. **It is not a certified navigation device, not a
+medical device, and not a substitute for paying attention to the road.**
+Turn-by-turn directions, routes, distances, and elevation are computed
+from third-party map and routing data that may be incomplete, out of
+date, or wrong, and may route you onto roads that are unsafe, closed,
+private, or prohibited for cyclists. Always follow real-world signs,
+traffic law, and your own judgement; do not interact with the screen
+while riding. Use at your own risk. We're not liable for missed turns,
+incorrect routing, lost data, drained batteries, crashes, injuries, or
+any other consequence of using the app while cycling — to the extent the
+law allows. Mandatory consumer protections (statutory conformity
+remedies, liability for gross negligence or wilful misconduct) are not
+displaced by this clause.
 
 ## Termination and suspension
 
@@ -125,4 +155,4 @@ if you are a consumer — the courts of your place of residence
 ## Contact
 
 Questions, complaints, refund requests, statutory withdrawal notices,
-or any other notice under these Terms: cyclematix@gmail.com.
+or any other notice under these Terms: jenkocoban@gmail.com.
