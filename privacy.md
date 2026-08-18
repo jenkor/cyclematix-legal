@@ -1,6 +1,6 @@
 # CycleMatix Privacy Policy
 
-_Last updated: 2026-06-02_
+_Last updated: 2026-08-18_
 
 CycleMatix is a single-developer cycling tracker for Android. This document
 explains what the app collects, why, and what you can do about it.
@@ -39,14 +39,15 @@ the single point of contact under Article 12 of Regulation (EU) 2022/2065
 | BLE sensor readings (power, HR, cadence) | Record the ride | Contract — Art. 6(1)(b) | Same | None unless you export | Until you delete it |
 | Settings (FTP, weight, units, paired sensor IDs, theme, preferences) | Run the app | Contract — Art. 6(1)(b) | shared_preferences on your device | None | Until you delete it |
 | Trial state (timestamp of first ride, ride count, extension flag) | Decide whether you're inside the free-trial window | Contract — Art. 6(1)(b) | shared_preferences | None | Wiped by Settings → Delete all my data |
-| Approximate location for map tile fetches | Render the map you're looking at | Contract — Art. 6(1)(b) | Sent to the active map provider per render | Mapbox (US) / MapTiler (CH) / OpenFreeMap (EU) / AWS terrain tiles (US) | Provider's logs (see their policy) |
-| Route waypoint coordinates | Generate cycling directions for a route you plan | Contract — Art. 6(1)(b) | Sent per route plan | Mapbox (US) if you use a Mapbox key, otherwise the public OSRM demo server (FOSSGIS e.V., DE) | Provider's logs |
+| Approximate location for map tile fetches | Render the map you're looking at | Contract — Art. 6(1)(b) | Sent to the active map provider per render | Mapbox (US) / OpenFreeMap (EU) / AWS terrain tiles (US) | Provider's logs (see their policy) |
+| Route waypoint coordinates | Generate cycling directions for a route you plan | Contract — Art. 6(1)(b) | Sent per route plan | The public BRouter server (`brouter.de`, DE) — whatever map provider you use | Provider's logs |
+| Route point coordinates (up to 500 along the line) | Find cafes, water, shops and toilets along a route — **only when you open the POI list for that route** | Consent — Art. 6(1)(a) | Sent when you open it, then cached per route | Overpass API (`overpass-api.de`, DE) | Per the operator's policy |
 | Place-search text | Find a destination to route to | Consent — Art. 6(1)(a) | Sent as you type | OpenStreetMap Foundation / Nominatim (UK) | Per OSMF policy |
 | Ride GPS track (sub-sampled ~every 50 m) | Correct a broken altitude trace on an imported ride — **only if you enable "Terrain elevation correction"** | Consent — Art. 6(1)(a) | Sent to OpenTopoData at import time; corrected altitudes stored on device | OpenTopoData (community elevation service) | Per OpenTopoData's policy; we keep only the returned altitudes, on your device |
 | Last-ride start coordinates | Check Saturday's forecast for the weekend-ride reminder — **only if you enable it** | Consent — Art. 6(1)(a) | Sent to open-meteo when the reminder refreshes | Open-Meteo (DE, EU) | Per open-meteo's policy |
 | Strava OAuth token | Push / import rides if you connect Strava | Consent — Art. 6(1)(a) | flutter_secure_storage (Android Keystore) | Strava Inc. (US) when you sync | Until you disconnect or wipe |
 | Google Drive OAuth token | Backup / import via your own Drive | Consent — Art. 6(1)(a) | flutter_secure_storage (Android Keystore) | Google LLC (US) when you sync | Until you disconnect or wipe |
-| Mapbox / MapTiler API key (yours, if you set one) | Authenticate map requests against your account | Contract — Art. 6(1)(b) | flutter_secure_storage | Mapbox (US) / MapTiler (CH) on each fetch | Until you replace or wipe it |
+| Mapbox API key (yours, if you set one) | Authenticate map requests against your account | Contract — Art. 6(1)(b) | flutter_secure_storage | Mapbox (US) on each fetch | Until you replace or wipe it |
 | Purchase token / order ID | Verify your one-time in-app purchase / restore | Contract — Art. 6(1)(b) | Google Play Billing | Google LLC | Per Google Play retention |
 
 We do not perform automated decision-making or profiling under GDPR
@@ -69,9 +70,9 @@ weekend nudge) are off until you turn them on. Disconnect Strava / Drive
 at any time in Settings → Integrations; toggle the location features in
 Settings → Data & network.
 
-- **Map tiles** — depending on the map provider you pick: **Mapbox**,
-  **MapTiler**, or the default **OpenFreeMap**, plus **AWS-hosted
-  terrain (hillshade) tiles** when a non-Mapbox base map is shown. Each
+- **Map tiles** — depending on the map provider you pick: **Mapbox** or
+  the default **OpenFreeMap**, plus **AWS-hosted terrain (hillshade)
+  tiles** when a non-Mapbox base map is shown. Each
   tile your viewport touches is requested from that provider's servers.
   That request necessarily reveals the rough area you're looking at
   (roughly street-block resolution) plus your IP address.
@@ -85,11 +86,17 @@ Settings → Data & network.
   seeing your requests entirely. Mapbox's retention policy applies; see
   https://www.mapbox.com/legal/privacy.
 
-- **OSRM (route directions)** — when your map provider is not Mapbox,
-  the coordinates of a route you plan are sent to the public OSRM demo
-  server (`router.project-osrm.org`, operated by FOSSGIS e.V.) to compute
-  cycling directions. If you use a Mapbox key, routing goes to Mapbox
-  instead.
+- **BRouter (route directions)** — the coordinates of a route you plan
+  are sent to the public BRouter server (`brouter.de`) to compute cycling
+  directions. This happens whichever map provider you use: routing and map
+  tiles are independent, so a Mapbox key does not change where routing
+  goes.
+
+- **Overpass (points of interest)** — when you open the POI list for a
+  route, up to 500 coordinates along that route are sent to
+  `overpass-api.de` to find cafes, water, shops and toilets near the line.
+  The result is cached against the route, so opening the list again does
+  not re-send it.
 
 - **Nominatim (place search)** — when you search for a place to route to,
   your search text is sent to `nominatim.openstreetmap.org` (OpenStreetMap
@@ -140,8 +147,8 @@ For Google Play's Data Safety form, the data CycleMatix handles maps to:
 
 Recipients process data in the **United States** (Mapbox, Strava, Google,
 AWS), the **United Kingdom** (OpenStreetMap Foundation / Nominatim),
-**Switzerland** (MapTiler), and the **EU/EEA** (open-meteo in Germany,
-OpenFreeMap, OSRM / FOSSGIS in Germany, and OpenTopoData where EU-hosted).
+and the **EU/EEA** (open-meteo in Germany, OpenFreeMap,
+BRouter and Overpass in Germany, and OpenTopoData where EU-hosted).
 Transfers rely on:
 
 - the **EU–US Data Privacy Framework** adequacy decision
@@ -151,7 +158,8 @@ Transfers rely on:
 - **Standard Contractual Clauses** (Commission Decision (EU) 2021/914)
   otherwise.
 
-Community services (OpenTopoData, OSRM, Nominatim) receive only
+Community services (OpenTopoData, BRouter, Overpass, Nominatim) receive
+only
 coordinates or search text and no account identifiers. You can ask for
 the relevant clauses or certification status by emailing
 jenkocoban@gmail.com.
@@ -164,7 +172,7 @@ jenkocoban@gmail.com.
 | Bluetooth scan / connect | Pairing power meters, HR straps, cadence sensors. |
 | Foreground service | Keeps GPS recording running while the screen is locked. |
 | Notifications | Active-ride status notification (so Android doesn't kill the recorder), and the optional weekend-ride reminder. |
-| Internet | Map tiles (Mapbox / MapTiler / OpenFreeMap / AWS terrain), route directions (Mapbox / OSRM), place search (Nominatim), optional terrain-elevation correction (OpenTopoData), optional weekend weather (open-meteo), and optional Strava / Google Drive sync. |
+| Internet | Map tiles (Mapbox / OpenFreeMap / AWS terrain), route directions (BRouter), place search (Nominatim), points of interest along a route (Overpass), optional terrain-elevation correction (OpenTopoData), optional weekend weather (open-meteo), and optional Strava / Google Drive sync. |
 
 ## Security
 
