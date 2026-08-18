@@ -27,7 +27,7 @@ explains what the app collects, why, and what you can do about it.
 ## Who we are
 
 CycleMatix is built and operated by Rok Jenko, an independent developer
-based in Slovenia, EU. Contact: jenkocoban@gmail.com. This email is also
+based in Slovenia, EU. Contact: cyclematix@gmail.com. This email is also
 the single point of contact under Article 12 of Regulation (EU) 2022/2065
 (the Digital Services Act).
 
@@ -38,7 +38,7 @@ the single point of contact under Article 12 of Regulation (EU) 2022/2065
 | GPS coordinates during a ride | Record the ride | Contract — Art. 6(1)(b) | On your device, local SQLite DB + JSON blobs | None unless you export | Until you delete it |
 | BLE sensor readings (power, HR, cadence) | Record the ride | Contract — Art. 6(1)(b) | Same | None unless you export | Until you delete it |
 | Settings (FTP, weight, units, paired sensor IDs, theme, preferences) | Run the app | Contract — Art. 6(1)(b) | shared_preferences on your device | None | Until you delete it |
-| Trial state (timestamp of first ride, ride count, extension flag) | Decide whether you're inside the free-trial window | Contract — Art. 6(1)(b) | shared_preferences | None | Wiped by Settings → Delete all my data |
+| Trial state (timestamp of first ride, ride count, extension flag) | Decide whether you're inside the free-trial window | Contract — Art. 6(1)(b) | shared_preferences | None | Wiped by Settings → Storage → Delete all my data |
 | Approximate location for map tile fetches | Render the map you're looking at | Contract — Art. 6(1)(b) | Sent to the active map provider per render | Mapbox (US) / OpenFreeMap (EU) / AWS terrain tiles (US) | Provider's logs (see their policy) |
 | Route waypoint coordinates | Generate cycling directions for a route you plan | Contract — Art. 6(1)(b) | Sent per route plan | The public BRouter server (`brouter.de`, DE) — whatever map provider you use | Provider's logs |
 | Route point coordinates (up to 500 along the line) | Find cafes, water, shops and toilets along a route — **only when you open the POI list for that route** | Consent — Art. 6(1)(a) | Sent when you open it, then cached per route | Overpass API (`overpass-api.de`, DE) | Per the operator's policy |
@@ -67,7 +67,7 @@ change ships.
 Each of these is reached **only when you use the relevant feature**, and
 the two that would send your ride location (elevation correction, the
 weekend nudge) are off until you turn them on. Disconnect Strava / Drive
-at any time in Settings → Integrations; toggle the location features in
+at any time in Settings → Connections; toggle the location features in
 Settings → Data & network.
 
 - **Map tiles** — depending on the map provider you pick: **Mapbox** or
@@ -164,7 +164,7 @@ Community services (OpenTopoData, BRouter, Overpass, Nominatim) receive
 only
 coordinates or search text and no account identifiers. You can ask for
 the relevant clauses or certification status by emailing
-jenkocoban@gmail.com.
+cyclematix@gmail.com.
 
 ## Permissions
 
@@ -247,7 +247,7 @@ any consent you've given.
   `.json` from the ride detail screen. Settings, FTP history, paired
   sensor IDs, and trial state are not currently exportable as a
   standalone bundle; an encrypted Drive backup contains all of it and
-  can be restored to a fresh install. Email jenkocoban@gmail.com if
+  can be restored to a fresh install. Email cyclematix@gmail.com if
   you need a different format.
 - **Withdraw consent** — disconnect Strava / Drive in Settings →
   Integrations; turn off terrain-elevation correction or the weekend
@@ -258,7 +258,7 @@ any consent you've given.
   Information Commissioner (Informacijski pooblaščenec, Dunajska 22,
   1000 Ljubljana, gp.ip@ip-rs.si, https://www.ip-rs.si) or with the
   supervisory authority in your EU/EEA country of residence.
-- **Contact** — jenkocoban@gmail.com.
+- **Contact** — cyclematix@gmail.com.
 
 ## Accounts
 
