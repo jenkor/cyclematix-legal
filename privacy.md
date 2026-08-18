@@ -250,7 +250,7 @@ any consent you've given.
   can be restored to a fresh install. Email cyclematix@gmail.com if
   you need a different format.
 - **Withdraw consent** — disconnect Strava / Drive in Settings →
-  Integrations; turn off terrain-elevation correction or the weekend
+  Connections; turn off terrain-elevation correction or the weekend
   reminder in Settings → Data & network.
 - **No sale** — we don't sell your data. CycleMatix's full feature set
   is a one-time purchase; selling data wouldn't fit the model.
@@ -266,7 +266,7 @@ CycleMatix does not create user accounts. There is no sign-up, no
 username, no password. Strava and Google Drive OAuth tokens authenticate
 you to **those third-party services** — CycleMatix never sees your
 Strava or Google credentials. To revoke access: Settings →
-Integrations → Disconnect, or revoke directly in your Strava /
+Connections → Disconnect, or revoke directly in your Strava /
 Google account settings.
 
 ## Children
