@@ -77,13 +77,15 @@ Settings → Data & network.
   That request necessarily reveals the rough area you're looking at
   (roughly street-block resolution) plus your IP address.
 
-  **During your free trial**, Mapbox tile requests are billed against
-  the developer's shared Mapbox account, which is rate-limited to
-  5,000 tiles per device per month. Once that cap is hit (or the
-  global free tier is exhausted) the app falls back to OpenStreetMap /
-  OpenFreeMap raster tiles. After purchase, a one-time prompt offers to
-  add your own Mapbox key — once you do, the developer's account stops
-  seeing your requests entirely. Mapbox's retention policy applies; see
+  If you use the **Mapbox** provider without supplying your own key,
+  those tile requests are billed against the developer's shared Mapbox
+  account. There is **no per-device limit**: the only protection is that
+  the account carries no payment method, so once the free tier is
+  exhausted Mapbox returns an error and the map stops loading tiles. The
+  app does **not** switch providers for you — you can switch to
+  OpenFreeMap yourself from the map's provider picker, or add your own
+  Mapbox key, after which the developer's account stops seeing your
+  requests entirely. Mapbox's retention policy applies; see
   https://www.mapbox.com/legal/privacy.
 
 - **BRouter (route directions)** — the coordinates of a route you plan
