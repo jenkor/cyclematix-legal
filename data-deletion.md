@@ -14,7 +14,7 @@ to delete.
 
 ## TL;DR
 
-- Open **CycleMatix → Settings → Storage → "Delete all my data"**.
+- Open **CycleMatix → Settings → Data & privacy → Storage → "Delete all my data"**.
 - One tap wipes every ride, route, workout, sensor reading and setting from
   your device.
 - Uninstalling the app also removes all of its on-device data.
@@ -24,7 +24,7 @@ to delete.
 
 1. Open **CycleMatix**.
 2. Go to **Settings**.
-3. Open the **Storage** section.
+3. Open **Data & privacy**, then the **Storage** section.
 4. Tap **"Delete all my data"** and confirm.
 
 This permanently removes, from your device:
@@ -47,11 +47,11 @@ your phone with a passphrase only you hold.
 
 To remove them:
 
-1. In CycleMatix, open **Settings → Cloud backup** and **disconnect**.
+1. In CycleMatix, open **Settings → Data & privacy → Storage → Cloud backup** and **disconnect**.
    Disconnecting clears the stored passphrase and the Drive sign-in token
    from your phone.
 2. To delete the backup files themselves, browse the backups from
-   **Settings → Cloud backup → Browse**, or remove the app's data from your
+   **Settings → Data & privacy → Storage → Cloud backup → Browse**, or remove the app's data from your
    Google account at
    [myaccount.google.com → Data & privacy → Third-party apps](https://myaccount.google.com/connections).
 

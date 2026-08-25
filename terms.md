@@ -1,6 +1,6 @@
 # CycleMatix Terms of Service
 
-_Last updated: 2026-08-18_
+_Last updated: 2026-08-25_
 
 By installing or using CycleMatix, you agree to these terms. The app is
 free to install; an optional one-time in-app purchase unlocks the full
@@ -15,8 +15,8 @@ rides. The full feature set is unlocked by a single optional one-time
 in-app purchase (no subscription); a free trial and a permanently-free
 tier are described below. It uses your phone's GPS, optional Bluetooth
 sensors, and optional third-party services: map tiles (OpenFreeMap or
-Mapbox), routing and turn-by-turn directions (the public BRouter server),
-points of interest along a route (Overpass), place search
+Mapbox), routing and turn-by-turn directions (the public BRouter
+server), points of interest along a route (Overpass), place search
 (OpenStreetMap Nominatim), terrain elevation correction (OpenTopoData),
 terrain / hillshade tiles (AWS Open Data / Mapzen), weekend weather
 (open-meteo), activity import (Strava), and encrypted backup (Google
@@ -102,13 +102,12 @@ in these Terms.
 
 - **Availability of third-party services.** Several features rely on
   external services we do not operate — including free community services
-  with no guaranteed uptime, capacity, or rate limits: OpenStreetMap
-  routing (the public BRouter server), points of interest (Overpass),
+  with no guaranteed uptime, capacity, or rate limits: cycling routing
+  (the public BRouter server), points of interest (Overpass),
   OpenStreetMap place search (Nominatim), OpenTopoData elevation, AWS
   Open Data / Mapzen terrain tiles, OpenFreeMap map tiles, plus Mapbox,
-  Strava, and Google Drive. These may be slow, rate-limited, temporarily
-  unavailable, or discontinued by their operators at any time. When that
-  happens,
+  Strava, and Google Drive. These may be slow, rate-limited, temporarily unavailable,
+  or discontinued by their operators at any time. When that happens,
   routing, search, elevation correction, map display, import, or backup
   may not work, and we cannot fix or compensate for the outage. Core
   local features (recording rides from GPS / sensors, viewing and

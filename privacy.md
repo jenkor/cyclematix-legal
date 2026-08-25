@@ -1,6 +1,6 @@
 # CycleMatix Privacy Policy
 
-_Last updated: 2026-08-18_
+_Last updated: 2026-08-25_
 
 CycleMatix is a single-developer cycling tracker for Android. This document
 explains what the app collects, why, and what you can do about it.
@@ -18,7 +18,7 @@ explains what the app collects, why, and what you can do about it.
 - Two features that would send your ride location off-device —
   **terrain elevation correction** and the **weekend-ride reminder** —
   are **off by default**. They only contact a third party after you turn
-  them on in Settings → Data & network.
+  them on in Settings → Data & privacy → Network.
 - We do not run any analytics. We do not run any crash-reporting. There
   is no advertising SDK in the app.
 - You can delete every byte the app stored, on-device, with one tap.
@@ -38,7 +38,7 @@ the single point of contact under Article 12 of Regulation (EU) 2022/2065
 | GPS coordinates during a ride | Record the ride | Contract — Art. 6(1)(b) | On your device, local SQLite DB + JSON blobs | None unless you export | Until you delete it |
 | BLE sensor readings (power, HR, cadence) | Record the ride | Contract — Art. 6(1)(b) | Same | None unless you export | Until you delete it |
 | Settings (FTP, weight, units, paired sensor IDs, theme, preferences) | Run the app | Contract — Art. 6(1)(b) | shared_preferences on your device | None | Until you delete it |
-| Trial state (timestamp of first ride, ride count, extension flag) | Decide whether you're inside the free-trial window | Contract — Art. 6(1)(b) | shared_preferences | None | Wiped by Settings → Storage → Delete all my data |
+| Trial state (timestamp of first ride, ride count, extension flag) | Decide whether you're inside the free-trial window | Contract — Art. 6(1)(b) | shared_preferences | None | Wiped by Settings → Data & privacy → Storage → Delete all my data |
 | Approximate location for map tile fetches | Render the map you're looking at | Contract — Art. 6(1)(b) | Sent to the active map provider per render | Mapbox (US) / OpenFreeMap (EU) / AWS terrain tiles (US) | Provider's logs (see their policy) |
 | Route waypoint coordinates | Generate cycling directions for a route you plan | Contract — Art. 6(1)(b) | Sent per route plan | The public BRouter server (`brouter.de`, DE) — whatever map provider you use | Provider's logs |
 | Route point coordinates (up to 500 along the line) | Find cafes, water, shops and toilets along a route — **only when you open the POI list for that route** | Consent — Art. 6(1)(a) | Sent when you open it, then cached per route | Overpass API (`overpass-api.de`, DE) | Per the operator's policy |
@@ -68,7 +68,7 @@ Each of these is reached **only when you use the relevant feature**, and
 the two that would send your ride location (elevation correction, the
 weekend nudge) are off until you turn them on. Disconnect Strava / Drive
 at any time in Settings → Connections; toggle the location features in
-Settings → Data & network.
+Settings → Data & privacy → Network.
 
 - **Map tiles** — depending on the map provider you pick: **Mapbox** or
   the default **OpenFreeMap**, plus **AWS-hosted terrain (hillshade)
@@ -105,7 +105,8 @@ Settings → Data & network.
   Foundation).
 
 - **OpenTopoData (terrain elevation)** — **off by default.** If you enable
-  "Terrain elevation correction" in Settings → Data & network, then when
+  "Terrain elevation correction" in Settings → Data & privacy →
+  Network, then when
   you import a ride its GPS track (sub-sampled) is sent to
   `api.opentopodata.org` to look up terrain elevation and fix a broken
   altitude trace. With the toggle off, imports use the device's recorded
@@ -161,8 +162,7 @@ Transfers rely on:
   otherwise.
 
 Community services (OpenTopoData, BRouter, Overpass, Nominatim) receive
-only
-coordinates or search text and no account identifiers. You can ask for
+only coordinates or search text and no account identifiers. You can ask for
 the relevant clauses or certification status by emailing
 cyclematix@gmail.com.
 
@@ -234,7 +234,8 @@ port, and object to processing of your personal data, and to withdraw
 any consent you've given.
 
 - **Access** — your data is on your phone. Open the app to see it.
-- **Erasure** — Settings → Storage → "Delete all my data". Wipes:
+- **Erasure** — Settings → Data & privacy → Storage → "Delete all my
+  data". Wipes:
   the SQLite database, every JSON ride blob in the app's documents
   folder, all shared_preferences (settings + trial state), all
   flutter_secure_storage entries (Strava token, Drive token, BYO
@@ -251,7 +252,7 @@ any consent you've given.
   you need a different format.
 - **Withdraw consent** — disconnect Strava / Drive in Settings →
   Connections; turn off terrain-elevation correction or the weekend
-  reminder in Settings → Data & network.
+  reminder in Settings → Data & privacy → Network.
 - **No sale** — we don't sell your data. CycleMatix's full feature set
   is a one-time purchase; selling data wouldn't fit the model.
 - **Complaint** — you can lodge a complaint with the Slovenian
