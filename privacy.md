@@ -1,6 +1,6 @@
 # CycleMatix Privacy Policy
 
-_Last updated: 2026-08-25_
+_Last updated: 2026-08-26_
 
 CycleMatix is a single-developer cycling tracker for Android. This document
 explains what the app collects, why, and what you can do about it.
@@ -244,8 +244,9 @@ any consent you've given.
   you previously pushed to Strava remain on Strava — manage those at
   strava.com. Drive backups you previously uploaded remain in your
   Drive — delete them in your Drive's "Apps with access" view.
-- **Portability** — every ride can be exported as `.fit`, `.gpx`, or
-  `.json` from the ride detail screen. Settings, FTP history, paired
+- **Portability** — every ride can be exported as `.gpx`, `.tcx`, or
+  `.json` from the ride detail screen, and every route as `.gpx`.
+  Settings, FTP history, paired
   sensor IDs, and trial state are not currently exportable as a
   standalone bundle; an encrypted Drive backup contains all of it and
   can be restored to a fresh install. Email cyclematix@gmail.com if
