@@ -1,6 +1,6 @@
 # CycleMatix Terms of Service
 
-_Last updated: 2026-08-25_
+_Last updated: 2026-08-28_
 
 By installing or using CycleMatix, you agree to these terms. The app is
 free to install; an optional one-time in-app purchase unlocks the full
@@ -83,7 +83,10 @@ If you make the in-app purchase as a consumer in the EU/EEA:
   termination with refund where the defect is not minor.
 
 - **EU Online Dispute Resolution.** Disputes can also be submitted via
-  the EU ODR platform: https://ec.europa.eu/consumers/odr.
+  the EU's list of national dispute-resolution bodies:
+  https://consumer-redress.ec.europa.eu/dispute-resolution-bodies.
+  (The EU ODR platform this used to name was discontinued on
+  20 July 2025 under Regulation (EU) 2024/3228.)
 
 These statutory rights take precedence over any "as-is" wording elsewhere
 in these Terms.

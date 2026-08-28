@@ -1,6 +1,6 @@
 # CycleMatix Privacy Policy
 
-_Last updated: 2026-08-26_
+_Last updated: 2026-08-28_
 
 CycleMatix is a single-developer cycling tracker for Android. This document
 explains what the app collects, why, and what you can do about it.
@@ -170,9 +170,13 @@ cyclematix@gmail.com.
 
 | Permission | Why |
 |---|---|
-| Fine + background location | Recording GPS during a ride. Background access is used **only** while a ride is actively recording, so the recording continues when the screen is off, when you switch to a music app, or when the phone is in your jersey pocket. The recording stops the moment you tap Stop. Location stays on the device unless you explicitly export the ride or enable an opt-in network feature. |
+| Fine + approximate location | Recording GPS during a ride. **We do not request "all the time" location.** The recording keeps running with the screen off, while you use another app, or with the phone in your jersey pocket, because a foreground service counts as in-use — not because the app has background access. The recording stops the moment you tap Stop. Location stays on the device unless you explicitly export the ride or enable an opt-in network feature. |
 | Bluetooth scan / connect | Pairing power meters, HR straps, cadence sensors. |
-| Foreground service | Keeps GPS recording running while the screen is locked. |
+| Foreground service (location) | Keeps GPS recording running while the screen is locked. This is what makes "all the time" location unnecessary. |
+| Wake lock | Holds the CPU awake for the duration of a recording, so samples are not dropped while the screen is off. |
+| Network / Wi-Fi state | Lets the app tell "offline" from "the service is down" before it retries a map, routing or sync request. |
+| Ignore battery optimisations | Optional, and only if you grant it. Android's battery optimiser is the most common cause of a recording dying mid-ride. |
+| Vibrate | Haptic confirmation on a lap mark and on the workout step change. |
 | Notifications | Active-ride status notification (so Android doesn't kill the recorder), and the optional weekend-ride reminder. |
 | Internet | Map tiles (Mapbox / OpenFreeMap / AWS terrain), route directions (BRouter), place search (Nominatim), points of interest along a route (Overpass), optional terrain-elevation correction (OpenTopoData), optional weekend weather (open-meteo), and optional Strava / Google Drive sync. |
 
@@ -244,8 +248,9 @@ any consent you've given.
   you previously pushed to Strava remain on Strava — manage those at
   strava.com. Drive backups you previously uploaded remain in your
   Drive — delete them in your Drive's "Apps with access" view.
-- **Portability** — every ride can be exported as `.gpx`, `.tcx`, or
-  `.json` from the ride detail screen, and every route as `.gpx`.
+- **Portability** — every ride can be exported as `.fit`, `.gpx`,
+  `.tcx` or `.json` from the ride detail screen, and every route as
+  `.gpx`.
   Settings, FTP history, paired
   sensor IDs, and trial state are not currently exportable as a
   standalone bundle; an encrypted Drive backup contains all of it and

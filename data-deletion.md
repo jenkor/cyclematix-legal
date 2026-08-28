@@ -4,7 +4,7 @@ title: CycleMatix — Data Deletion
 
 # CycleMatix — How to delete your data
 
-_Last updated: 2026-06-02_
+_Last updated: 2026-08-28_
 
 CycleMatix is a local-first cycling tracker for Android, built by Rok Jenko,
 an independent developer based in Slovenia, EU. The app does **not** run a
@@ -35,6 +35,7 @@ This permanently removes, from your device:
 - Your bike profiles and app settings.
 - Any stored Strava and Google sign-in tokens.
 - The encrypted-backup passphrase, if you set one.
+- Saved places, cached offline map packs, and the on-device crash log.
 
 The deletion is immediate and cannot be undone.
 
@@ -51,18 +52,19 @@ To remove them:
    Disconnecting clears the stored passphrase and the Drive sign-in token
    from your phone.
 2. To delete the backup files themselves, browse the backups from
-   **Settings → Data & privacy → Storage → Cloud backup → Browse**, or remove the app's data from your
-   Google account at
+   **Settings → Data & privacy → Storage → Cloud backup → Browse backups**,
+   or remove the app's data from your Google account at
    [myaccount.google.com → Data & privacy → Third-party apps](https://myaccount.google.com/connections).
 
 ## What we keep
 
 Nothing. CycleMatix has no server, no analytics database, and no user
 accounts. We do not retain any copy of your rides, routes, sensors or
-identity. Crash diagnostics (if you have them enabled) are anonymised and
-contain no ride data. Once you delete on-device data and disconnect any
-optional cloud backup, no CycleMatix-held copy of your data remains, because
-none ever existed off your device.
+identity. The crash log CycleMatix writes stays **on your device** — it is
+never uploaded, there is nowhere for it to go, and "Delete all my data"
+removes it along with everything else. Once you delete on-device data and
+disconnect any optional cloud backup, no CycleMatix-held copy of your data
+remains, because none ever existed off your device.
 
 ## Contact
 
