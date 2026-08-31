@@ -34,8 +34,9 @@ and remits on our behalf.
 
 ## The deal
 
-- **Free trial, full features.** Your trial begins on your first
-  recorded ride (≥1 km), not when you install the app. The base trial
+- **Free trial, full features.** Your trial begins when you first put
+  something in the app — a recorded ride (≥1 km), a ride you import, or a
+  route you save — not when you install it. The base trial
   is **14 days**. If you have logged fewer than 3 rides by day 14, the
   trial automatically extends to **30 days** so you have time to put
   the app through its paces.
@@ -43,10 +44,14 @@ and remits on our behalf.
   trial. No subscription, no recurring billing. The one-time price you
   pay to unlock is the price you pay forever — we will not retroactively
   move unlocked features behind a new purchase or subscription.
-- **Free forever, even without buying.** Without the purchase you can
-  still view your past rides, export them, switch map providers, and
-  import a limited number of rides — see the in-app "What's free forever"
-  list on the paywall.
+- **Free forever, even without buying.** When the trial ends the app
+  becomes read-only: you keep opening it and viewing your saved rides and
+  routes, exporting any of them to `.fit`, `.gpx`, `.tcx` or `.json`
+  without limit, and switching map providers. Recording a new ride,
+  importing rides, planning routes, downloading offline maps, creating
+  backups and the workout builder need the one-time purchase.
+- **A backup you already made can always be restored**, including after
+  the trial ends and without the one-time purchase.
 - Refunds follow Google Play's standard 48-hour automatic-refund window.
   Outside that window, refund requests can be sent to the contact
   address below; we'll honour reasonable requests at our discretion,
