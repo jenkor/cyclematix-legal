@@ -1,6 +1,6 @@
 # CycleMatix Terms of Service
 
-_Last updated: 2026-08-28_
+_Last updated: 2026-08-31_
 
 By installing or using CycleMatix, you agree to these terms. The app is
 free to install; an optional one-time in-app purchase unlocks the full
@@ -37,7 +37,7 @@ and remits on our behalf.
 - **Free trial, full features.** Your trial begins when you first put
   something in the app — a recorded ride (≥1 km), a ride you import, or a
   route you save — not when you install it. The base trial
-  is **14 days**. If you have logged fewer than 3 rides by day 14, the
+  is **14 days**. If you have recorded fewer than 3 rides by day 14, the
   trial automatically extends to **30 days** so you have time to put
   the app through its paces.
 - **One-time in-app purchase** to keep the full feature set after the
